@@ -1,0 +1,85 @@
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.bio{
+    display:flex;
+    flex-direction:column-reverse;
+    background-color:#F2F3F2;
+    text-align:center;
+}
+.bio img{
+    margin: auto 8%;
+}
+
+#phead{
+    text-align:center;
+}
+.project{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    text-align:center;
+}
+.contact{
+    background-color:#F2F3F2;
+    text-align:center;
+    width:100%;
+}
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-self: flex-end;
+    justify-content: space-between;
+}
+@media (max-width: 765px){
+    footer h3{
+        display:none;
+    }
+}
+@media (min-width:768px){
+    body{
+        align-items: center;
+    }
+    #navigation{
+        display:flex;
+        justify-content:space-between;
+        flex-direction:row;
+    }
+    .bio{
+        flex-direction:row;
+        text-align:left;
+        font-size: 3vw;
+        
+    }
+    .bio img{
+        margin: auto 2%;
+        margin-left: 2%;
+    }
+    .bio p{
+        margin: 5%;
+    }
+    .portfolio{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 768px;
+    }
+    .project{
+        width:300px;
+        margin:10px;
+    }
+}
+@media (min-width:1024px){
+    .portfolio{
+        width:1024px;
+    }
+}
